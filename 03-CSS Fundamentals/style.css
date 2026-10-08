@@ -36,10 +36,11 @@ li {
   font-size: 20px;
 }
 
-footer p{
-    font-size : 16px;
+footer p {
+  font-size: 16px;
+  text-transform: capitalize;
 }
 
-article header p{
-    font-style: italic;
+article header p {
+  font-style: italic;
 }
