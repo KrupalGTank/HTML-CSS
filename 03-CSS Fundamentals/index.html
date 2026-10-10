@@ -14,9 +14,10 @@
     <h5>Basic HTML Tags</h5> 
     <h6>Basic HTML Tags</h6>  -->
 
-    <header>
+    <header class="main-header">
       <h1>The code magazine</h1>
       <nav>
+        <!-- <strong>navigation links.</strong> -->
         <a href="./blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">CSS</a>
@@ -35,7 +36,7 @@
           height="100"
         />
 
-        <p>hosted by <b>Krupal Tank</b></p>
+        <p id="author">hosted by <b>Krupal Tank</b></p>
 
         <img
           src="./images/v1_2.jpeg"
@@ -107,34 +108,38 @@
       <ul>
         <li>point 1</li>
         <li>point 2</li>
+        <li>point 3</li>
+        <li>point 4</li>
+        <li>point 5</li>
       </ul>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
     </article>
 
     <aside>
       <h3>Related posts</h3>
-      <ul>
+      <ul class="related">
         <li>
           <img src="./images/v1_34.jpg" alt="photo 1" width="75" height="75" />
           <a href="#">Learn Web Developement</a>
-          <p>By Jonas</p>
+          <p class="related-authors">By Jonas</p>
         </li>
 
         <li>
           <img src="./images/v1_35.jpg" alt="photo 2" width="75" height="75" />
           <a href="#">Learn HTML</a>
-          <p>by Krupal G Tank</p>
+          <p class="related-authors">by Krupal G Tank</p>
         </li>
 
         <li>
           <img src="./images/v1_36.jpg" alt="photo 3" width="75" height="75" />
           <a href="#">Laern CSS</a>
-          <p>by K G Tank</p>
+          <p class="related-authors">by K G Tank</p>
         </li>
       </ul>
     </aside>
 
     <footer>
-      <p>Copyright &copy; @2026</p>
+      <p id="copyright">Copyright &copy; @2026</p>
     </footer>
   </body>
 </html>
