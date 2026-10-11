@@ -1,6 +1,6 @@
 /*whatever css written in universal selector must be applied to all elements regardless of it is impractical or not. there is no inheritance involved.*/
 * {
-  border-top: 10px solid blue;
+  /* border-top: 10px solid blue; */
   margin: 0;
   padding: 0;
 }
@@ -133,6 +133,11 @@ footer p {
   font-size: 18px;
 }
 
+#related-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .related-authors {
   font-size: 18px;
   font-weight: bold;
@@ -160,7 +165,7 @@ article p:first-child {
 }
 
 /* styling links */
-a {
+/* a {
   color: blue;
 }
 a:link {
@@ -177,7 +182,7 @@ a:hover {
 }
 a:active {
   background-color: blueviolet;
-}
+} */
 
 footer p {
   color: aqua;
@@ -205,4 +210,35 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* 
+h2::first-letter{
+  font-size: 80px;
+} */
+
+/* only select paragraph that immediately comes after h3 element. means siblings selector. */
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  color: black;
 }
