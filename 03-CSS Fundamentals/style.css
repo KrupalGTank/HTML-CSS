@@ -40,7 +40,7 @@ li {
   padding-right:40px; */
   padding: 20px 40px; /*top-bottom and left-right*/
   margin-bottom:60px;
-  height:80px;
+  /* height:80px;  */
 }
 
 .post-header{
@@ -183,4 +183,14 @@ footer p {
 .post-image{
   width: 100%; 
   height:auto;
+}
+
+nav a:link{
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child{
+  margin-right: 0px;
 }
