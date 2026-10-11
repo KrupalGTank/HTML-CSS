@@ -1,7 +1,8 @@
-
 /*whatever css written in universal selector must be applied to all elements regardless of it is impractical or not. there is no inheritance involved.*/
-*{
-  border-top:10px solid blue;
+* {
+  border-top: 10px solid blue;
+  margin:0;
+  padding:0; 
 }
 
 /*some property like border-top will not b inherited if we write in boy, or in any other selector except universal selector.
@@ -11,6 +12,7 @@ style in body will be inherited by all descendents.
 body {
   color: black;
   font-family: sans-serif;
+  border-top: 10px solid aqua;
 }
 
 /*group selector.*/
@@ -23,6 +25,43 @@ li {
   font-family: sans-serif;
   color: rgb(22, 36, 39);
 } */
+
+.container{
+  width:800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin : 0 auto;
+}
+
+.main-header {
+  background-color: rgb(242, 245, 245);
+  /* padding : 20px;
+  padding-left: 40px;
+  padding-right:40px; */
+  padding: 20px 40px; /*top-bottom and left-right*/
+  margin-bottom:60px;
+  height:80px;
+}
+
+.post-header{
+  margin-bottom:40px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article{
+  margin-bottom:60px;
+}
+
+aside {
+  background-color: rgb(242, 245, 245);
+  border-top: 5px solid rgb(111, 200, 248);
+  border-bottom: 5px solid rgb(111, 200, 248);
+  padding : 50px 0;
+  width : 500px;
+}
 
 h1,
 h2,
@@ -38,10 +77,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom:30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -53,10 +95,21 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul, ol{
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child{
+  margin-bottom: 0;
 }
 
 footer p {
@@ -84,16 +137,6 @@ footer p {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: rgb(242, 245, 245);
-}
-
-aside {
-  background-color: rgb(242, 245, 245);
-  border-top: 5px solid rgb(111, 200, 248);
-  border-bottom: 5px solid rgb(111, 200, 248);
 }
 
 li:first-child {
@@ -137,6 +180,7 @@ footer p {
   color: aqua;
 }
 
-nav{
-  font-size:18px;
+.post-image{
+  width: 100%; 
+  height:auto;
 }
