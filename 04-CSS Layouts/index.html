@@ -21,8 +21,8 @@
           <!-- <strong>navigation links.</strong> -->
           <a href="./blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">CSS</a>
-          <a href="#">FlexBox</a>
+          <a href="./css-grid.html">CSS Grid</a>
+          <a href="./flexbox.html">FlexBox</a>
         </nav>
         <!-- <div class="clear"></div> -->
       </header>
@@ -31,15 +31,17 @@
         <header class="post-header">
           <h2>basic language of web : html</h2>
 
-          <img
-            src="./images/v1_1.jpg"
-            alt="camera image"
-            width="100"
-            height="100"
-            class="author-image"
-          />
+          <div class="author-box">
+            <img
+              src="./images/v1_1.jpg"
+              alt="camera image"
+              width="100"
+              height="100"
+              class="author-image"
+            />
 
-          <p id="author">Posted by <b>Krupal Tank</b></p>
+            <p class="author">Posted by <b>Krupal Tank</b></p>
+          </div>
 
           <img
             src="./images/v1_2.jpeg"
@@ -124,37 +126,45 @@
       <aside>
         <h3 id="related-title">Related posts</h3>
         <ul class="related">
-          <li>
+          <li class="related-post">
             <img
               src="./images/v1_34.jpg"
               alt="photo 1"
               width="75"
               height="75"
             />
-            <a href="#">Learn Web Developement</a>
-            <p class="related-authors">By Jonas</p>
+            <div>
+              <a href="#" class="related-link">Learn Web Developement</a>
+              <p class="related-authors">By Jonas</p>
+            </div>
           </li>
 
-          <li>
+          <li class="related-post">
             <img
               src="./images/v1_35.jpg"
               alt="photo 2"
               width="75"
               height="75"
             />
-            <a href="#">Learn HTML</a>
-            <p class="related-authors">by Krupal G Tank</p>
+
+            <div>
+              <a href="#" class="related-link">Learn HTML</a>
+              <p class="related-authors">by Krupal G Tank</p>
+            </div>
           </li>
 
-          <li>
+          <li class="related-post">
             <img
               src="./images/v1_36.jpg"
               alt="photo 3"
               width="75"
               height="75"
             />
-            <a href="#">Laern CSS</a>
-            <p class="related-authors">by K G Tank</p>
+
+            <div>
+              <a href="#" class="related-link">Laern CSS</a>
+              <p class="related-authors">by K G Tank</p>
+            </div>
           </li>
         </ul>
       </aside>
