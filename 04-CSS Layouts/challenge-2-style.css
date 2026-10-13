@@ -46,7 +46,7 @@ body{
   text-transform : uppercase;
   font-weight : bold;
   color : #777;
-  margin-bottom:20px;
+  /* margin-bottom:20px; */
 }
 .info:link, .info:visited{
   color:black;
@@ -116,10 +116,10 @@ body{
   color:#000;
   background-color:#fff;
 }
-
+/* 
 .element1{
   float:left;  
-  /* width:30%; */
+  
   margin-right:40px;
 }
 
@@ -148,12 +148,28 @@ body{
   float:left;
 }
 
-/* .container1{
-  background-color:red;
-} */
-
+.container1{
+ 
+}
 .clearfix::after{
   content:"";
   display:block;
   clear:both;
+} */
+
+/*flexbox*/
+
+.container1{
+  display:flex;
+  gap:30px;
+  flex: 0 1;
+}
+.element3{
+  margin-right:20px;
+}
+.price-shipping{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:10px;
 }
