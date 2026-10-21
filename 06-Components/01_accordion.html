@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accordion Component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #171717;
+      }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        /* align-items: space-evenly; */
+      }
+      .div {
+        display: flex;
+        margin-bottom: 25px;
+        background-color: rgb(191, 251, 251);
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+      }
+      .number {
+        margin-right: 30px;
+        font-size: x-large;
+        font-weight: 10;
+        color: #8b8b8b;
+        width: 10%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+        width: 80%;
+      }
+      .special h2 {
+        margin-bottom: 25px;
+      }
+      .content p {
+        margin-bottom: 25px;
+      }
+      .content ul {
+        margin-left: 15px;
+      }
+      .content li {
+        margin-bottom: 10px;
+      }
+      .icon {
+        width: 10%;
+        color: #000000;
+        width: 30px;
+        height: 30px;
+      }
+      .special {
+        border-top: 4px solid rgb(3, 197, 3);
+      }
+      .special h2 {
+        color: rgb(3, 197, 3);
+      }
+      .special .number p {
+        color: rgb(3, 197, 3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="div">
+        <div class="number"><p>01</p></div>
+        <div class="content">
+          <h2>my name is tank krupal ghanshyambhai</h2>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="div special">
+        <div class="number"><p>02</p></div>
+        <div class="content">
+          <h2>i am from second year cp department</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            veniam porro expedita impedit, nemo iste commodi assumenda maiores
+            aperiam nam modi laboriosam aspernatur aliquam recusandae et odit
+            nihil officiis reprehenderit?
+          </p>
+          <ul>
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+          </ul>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="div">
+        <div class="number"><p>03</p></div>
+        <div class="content"><h2>hello world how are you i am fine</h2></div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
