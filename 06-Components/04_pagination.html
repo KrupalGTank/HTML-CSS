@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        /* margin-top: 20%; */
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        color: green;
+      }
+      .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+
+        cursor: pointer;
+      }
+      .number p {
+        font-size: 20px;
+        color: green;
+      }
+      .number:hover {
+        background-color: rgb(6, 96, 6);
+      }
+      .number:hover p {
+        color: rgb(167, 203, 167);
+      }
+      .btn:hover .icon {
+        stroke: rgb(167, 203, 167);
+      }
+      .btn {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn number">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+      <div class="number"><p>1</p></div>
+      <div class="number"><p>2</p></div>
+      <div class="number"><p>3</p></div>
+      <div class="number"><p>4</p></div>
+      <div class="number"><p>5</p></div>
+      <div class="number"><p>6</p></div>
+      <div>
+        <span>....</span>
+      </div>
+      <div class="number"><p>23</p></div>
+      <div class="btn number">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
