@@ -469,7 +469,7 @@
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow:cta;
 
-  height: 52rem;
+  /* height: 52rem; */
 }
 
 .cta-text-box{
