@@ -14,6 +14,15 @@ h1.addEventListener('click', function(){
 const y = document.querySelector('.year');
 y.textContent= new Date().getFullYear();
 
+/*make mobile navigation work*/
+
+const btn = document.querySelector('.btn-mobile-nav');
+const header = document.querySelector('.header');
+btn.addEventListener("click", function(){
+    header.classList.toggle("nav-open");
+});
+
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
