@@ -1,27 +1,50 @@
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
-console.log("hello")
+console.log("hello");
 
-const h1 = document.querySelector('.heading-primary')
+const h1 = document.querySelector(".heading-primary");
 
-h1.addEventListener('click', function(){
-    h1.textContent = "Krupal G Tank"
-    h1.style.backgroundColor = "red";
-    h1.style.padding = "5rem";
-
+h1.addEventListener("click", function () {
+  h1.textContent = "Krupal G Tank";
+  h1.style.backgroundColor = "red";
+  h1.style.padding = "5rem";
 });
 
-const y = document.querySelector('.year');
-y.textContent= new Date().getFullYear();
+const y = document.querySelector(".year");
+y.textContent = new Date().getFullYear();
 
 /*make mobile navigation work*/
 
-const btn = document.querySelector('.btn-mobile-nav');
-const header = document.querySelector('.header');
-btn.addEventListener("click", function(){
-    header.classList.toggle("nav-open");
+const btn = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+btn.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
 });
 
+/**
+ * smooth scrolling animation
+ */
+const links = document.querySelectorAll("a:link");
+links.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+    
+    if(href === "#") window.scrollTo({
+      top:0,
+      behaviour:"smooth",
+    });
+
+    if(href !== "#" && href.startsWith("#")){
+      const el = document.querySelector(href);
+      el.scrollIntoView({behavior:"smooth"});
+    }
+
+    if(link.classList.contains("main-nav-link")){
+      header.classList.toggle("nav-open");
+    }
+  });
+});
 
 function checkFlexGap() {
   var flex = document.createElement("div");
