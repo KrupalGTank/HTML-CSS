@@ -28,23 +28,44 @@ const links = document.querySelectorAll("a:link");
 links.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute('href');
-    
-    if(href === "#") window.scrollTo({
-      top:0,
-      behaviour:"smooth",
-    });
+    const href = link.getAttribute("href");
 
-    if(href !== "#" && href.startsWith("#")){
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behaviour: "smooth",
+      });
+
+    if (href !== "#" && href.startsWith("#")) {
       const el = document.querySelector(href);
-      el.scrollIntoView({behavior:"smooth"});
+      el.scrollIntoView({ behavior: "smooth" });
     }
 
-    if(link.classList.contains("main-nav-link")){
+    if (link.classList.contains("main-nav-link")) {
       header.classList.toggle("nav-open");
     }
   });
 });
+
+/**
+ * sticky navigation
+ */
+const hero = document.querySelector(".section-hero");
+const ob = new IntersectionObserver(
+  function (entries) {
+    const e = entries[0];
+    console.log(e);
+    if(e.isIntersecting === false){
+      document.body.classList.add('sticky');
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  },
+);
+ob.observe(hero);
 
 function checkFlexGap() {
   var flex = document.createElement("div");
