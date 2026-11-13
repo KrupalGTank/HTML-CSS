@@ -87,7 +87,13 @@
           </div>
 
           <div class="hero-img-box">
-            <img src="img/hero.png" class="hero-img" alt="hero image" />
+            <picture>
+              <source srcset="img/hero.png" type="image/png">
+              <source srcset="img/hero-min.png" type="image/png">
+              
+              <img src="img/hero.png" class="hero-img" alt="hero image" />
+
+            </picture>
           </div>
         </div>
       </section>
